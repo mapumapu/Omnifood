@@ -61,6 +61,7 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%; /* 10px */
+  overflow-x: hidden;
 }
 
 body {
@@ -68,6 +69,10 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* Only works if there is nothing absolutely positioned
+  in relation to body */
+  overflow-x: hidden;
 }
 
 /**********************/
@@ -83,8 +88,8 @@ body {
 
 .grid {
   display: grid;
-  row-gap: 9.6rem;
   column-gap: 6.4rem;
+  row-gap: 9.6rem;
 
   /* margin-bottom: 9.6rem; */
 }
@@ -249,6 +254,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 *:focus {
