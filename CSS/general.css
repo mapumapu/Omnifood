@@ -62,6 +62,9 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%; /* 10px */
   overflow-x: hidden;
+
+  /* Smooth Scroll animation */
+  scroll-behavior: smooth;
 }
 
 body {
